@@ -1,6 +1,11 @@
 package testCases;
 
+import org.testng.annotations.Test;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Enumeration;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -26,18 +31,42 @@ public class HybridExecuteTest {
 	WebDriver webdriver = null;
 
 	@Test
-	public void executeTest(){
+	public void executeTest() throws IOException{
 		//HomePage 
+		File file = new File("Env.properties");
+		FileInputStream fileInput = new FileInputStream(file);
+		Properties properties = new Properties();
+		properties.load(fileInput);
+		fileInput.close();
+		
+		String browservalue = properties.getProperty("BROWSER");
+		
+		if(browservalue.toUpperCase().equalsIgnoreCase("CHROME"))
+		{
 		System.setProperty("webdriver.chrome.driver", "D:\\chrome driver\\chromedriver.exe");
 		webdriver=new ChromeDriver();
 		webdriver.manage().window().maximize();
 		webdriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
+		}
+		else if(browservalue.toUpperCase().equalsIgnoreCase("FIREFOX"))
+		{
+		//
+		}
 		
+		else if(browservalue.toUpperCase().equalsIgnoreCase("IE"))
+		{
+		//
+		}
+		
+		else
+		{
+			System.out.print("Driver Instance can not be initialized...");
+		}
 		pageObjectManager= new PageObjectManager(webdriver);
 		homePage = pageObjectManager.getHomePage(webdriver);
 		homePage.loadUrl("https://www.google.com");
 		homePage.typeInSearchBox("ABC");
+		homePage.closeBrowser();
 	}
 	/*@Test(dataProvider = "hybridData")
 	public void testLogin(String testcaseName, String keyword, String objectName, String objectType, String value)

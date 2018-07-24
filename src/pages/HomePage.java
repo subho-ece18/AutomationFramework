@@ -1,5 +1,10 @@
 package pages;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.WebElement;
@@ -10,6 +15,7 @@ import org.openqa.selenium.support.PageFactory;
 
 
 public class HomePage {
+	
 	
 	WebDriver driver =null;
 
@@ -32,6 +38,7 @@ public class HomePage {
 
     //Set user name in textbox
 
+    
     public HomePage loadUrl(String url){
 
         driver.get(url);
@@ -46,6 +53,12 @@ public class HomePage {
 
     }
 
+    public HomePage closeBrowser(){
+
+        driver.quit();
+        return this;
+
+    }
     
 
 }
