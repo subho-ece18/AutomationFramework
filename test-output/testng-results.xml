@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="9715" started-at="2018-07-24T19:23:06Z" finished-at="2018-07-24T19:23:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="9715" started-at="2018-07-24T19:23:06Z" finished-at="2018-07-24T19:23:16Z">
+      <class name="testCases.HybridExecuteTest">
+        <test-method status="PASS" signature="executeTest()[pri:0, instance:testCases.HybridExecuteTest@735b5592]" name="executeTest" duration-ms="9671" started-at="2018-07-25T00:53:06Z" finished-at="2018-07-25T00:53:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeTest -->
+      </class> <!-- testCases.HybridExecuteTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

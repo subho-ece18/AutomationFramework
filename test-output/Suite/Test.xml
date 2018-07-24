@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="SUBHODEEP-PC" name="testCases.HybridExecuteTest" tests="1" failures="1" timestamp="24 Jul 2018 17:52:40 GMT" time="0.034" errors="0">
+  <testcase name="executeTest" time="0.018" classname="testCases.HybridExecuteTest">
+    <failure type="java.lang.NullPointerException">
+      <![CDATA[java.lang.NullPointerException
+	at testCases.HybridExecuteTest.executeTest(HybridExecuteTest.java:29)
+... Removed 25 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>
