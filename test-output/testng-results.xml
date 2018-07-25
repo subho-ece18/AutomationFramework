@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8058" started-at="2018-07-24T20:11:48Z" finished-at="2018-07-24T20:11:56Z">
+  <suite name="Default suite" duration-ms="54" started-at="2018-07-25T20:26:53Z" finished-at="2018-07-25T20:26:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8058" started-at="2018-07-24T20:11:48Z" finished-at="2018-07-24T20:11:56Z">
+    <test name="Default test" duration-ms="54" started-at="2018-07-25T20:26:53Z" finished-at="2018-07-25T20:26:53Z">
       <class name="testCases.HybridExecuteTest">
-        <test-method status="PASS" signature="executeTest()[pri:0, instance:testCases.HybridExecuteTest@735b5592]" name="executeTest" duration-ms="8022" started-at="2018-07-25T01:41:48Z" finished-at="2018-07-25T01:41:56Z">
+        <test-method status="PASS" signature="executeTest()[pri:0, instance:testCases.HybridExecuteTest@735b5592]" name="executeTest" duration-ms="33" started-at="2018-07-26T01:56:53Z" finished-at="2018-07-26T01:56:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTest -->
