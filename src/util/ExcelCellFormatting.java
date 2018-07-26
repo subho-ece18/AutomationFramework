@@ -23,8 +23,8 @@ public class ExcelCellFormatting {
 		return this.fontSize;
 	}
 
-	public void setFontSize(short fontSize) {
-		this.fontSize = fontSize;
+	public void setFontSize(int i) {
+		this.fontSize = (short) i;
 	}
 
 	public short getBackColorIndex() {

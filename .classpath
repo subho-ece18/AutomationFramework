@@ -41,5 +41,15 @@
 	<classpathentry kind="lib" path="D:/jcommander-1.48.jar"/>
 	<classpathentry kind="lib" path="D:/Framework/HybridFramework/POI/lib/bsh-2.0b4.jar"/>
 	<classpathentry exported="true" kind="lib" path="D:/testng-6.11.jar"/>
+	<classpathentry kind="lib" path="D:/support libraries/commons-io-2.6/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="D:/support libraries/commons-io-2.6/commons-io-2.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/support libraries/commons-io-2.6/commons-io-2.6-sources.jar"/>
+	<classpathentry kind="lib" path="D:/support libraries/commons-io-2.6/commons-io-2.6-tests.jar"/>
+	<classpathentry kind="lib" path="D:/support libraries/commons-io-2.6/commons-io-2.6-test-sources.jar"/>
+	<classpathentry kind="lib" path="D:/support libraries/common-lang3.jar"/>
+	<classpathentry kind="lib" path="D:/support libraries/htmlunit-2.9.jar"/>
+	<classpathentry kind="lib" path="D:/support libraries/htmlunit-2.9-sources.jar"/>
+	<classpathentry kind="lib" path="D:/support libraries/selenium-htmlunit-driver-2.9.0.jar"/>
+	<classpathentry kind="lib" path="D:/support libraries/selenium-api-2.34.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

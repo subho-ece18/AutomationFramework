@@ -32,11 +32,11 @@ public class ExcelReport implements ReportType {
 		this.testLogAccess.createWorkbook();
 		this.testLogAccess.addSheet("Cover_Page");
 		this.testLogAccess.addSheet("Test_Log");
-		this.initializeTestLogColorPalette();
+		//this.initializeTestLogColorPalette();
 		this.testLogAccess.setRowSumsBelow(false);
 	}
 
-	private void initializeTestLogColorPalette() {
+	/*private void initializeTestLogColorPalette() {
 		this.testLogAccess.setCustomPaletteColor(8,
 				this.reportTheme.getHeadingBackColor());
 		this.testLogAccess.setCustomPaletteColor(9,
@@ -54,7 +54,7 @@ public class ExcelReport implements ReportType {
 		this.testLogAccess.setCustomPaletteColor(16, "#FF8000");
 		this.testLogAccess.setCustomPaletteColor(17, "#000000");
 		this.testLogAccess.setCustomPaletteColor(18, "#00FF80");
-	}
+	}*/
 
 	public void addTestLogHeading(String heading) {
 		this.testLogAccess.setDatasheetName("Cover_Page");
@@ -226,6 +226,11 @@ public class ExcelReport implements ReportType {
 		return stepContainsScreenshot;
 	}
 
+	private int[] $SWITCH_TABLE$com$c$f$Status() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	public void addTestLogFooter(String executionTime, int nStepsPassed,
 			int nStepsFailed) {
 		this.testLogAccess.setDatasheetName("Test_Log");
@@ -279,10 +284,10 @@ public class ExcelReport implements ReportType {
 		this.resultSummaryAccess.createWorkbook();
 		this.resultSummaryAccess.addSheet("Cover_Page");
 		this.resultSummaryAccess.addSheet("Result_Summary");
-		this.initializeResultSummaryColorPalette();
+		//this.initializeResultSummaryColorPalette();
 	}
 
-	private void initializeResultSummaryColorPalette() {
+	/*private void initializeResultSummaryColorPalette() {
 		this.resultSummaryAccess.setCustomPaletteColor(8,
 				this.reportTheme.getHeadingBackColor());
 		this.resultSummaryAccess.setCustomPaletteColor(9,
@@ -297,7 +302,7 @@ public class ExcelReport implements ReportType {
 				this.reportTheme.getContentForeColor());
 		this.resultSummaryAccess.setCustomPaletteColor(14, "#008000");
 		this.resultSummaryAccess.setCustomPaletteColor(15, "#FF0000");
-	}
+	}*/
 
 	public void addResultSummaryHeading(String heading) {
 		this.resultSummaryAccess.setDatasheetName("Cover_Page");
