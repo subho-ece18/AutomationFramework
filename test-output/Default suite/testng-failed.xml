@@ -3,11 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testCases.HybridExecuteTest">
+      <class name="testscripts.S1_TC1_NewFunctionality">
         <methods>
-          <include name="executeTest"/>
+          <include name="runS1_TC1_NewFunctionality"/>
+          <include name="testMethodSetup"/>
+          <include name="suiteTearDown"/>
+          <include name="suiteSetup"/>
+          <include name="testMethodTearDown"/>
         </methods>
-      </class> <!-- testCases.HybridExecuteTest -->
+      </class> <!-- testscripts.S1_TC1_NewFunctionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,17 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="54" started-at="2018-07-25T20:26:53Z" finished-at="2018-07-25T20:26:53Z">
+  <suite name="Default suite" duration-ms="96" started-at="2018-07-26T20:16:05Z" finished-at="2018-07-26T20:16:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="54" started-at="2018-07-25T20:26:53Z" finished-at="2018-07-25T20:26:53Z">
-      <class name="testCases.HybridExecuteTest">
-        <test-method status="PASS" signature="executeTest()[pri:0, instance:testCases.HybridExecuteTest@735b5592]" name="executeTest" duration-ms="33" started-at="2018-07-26T01:56:53Z" finished-at="2018-07-26T01:56:53Z">
+    <test name="Default test" duration-ms="96" started-at="2018-07-26T20:16:05Z" finished-at="2018-07-26T20:16:05Z">
+      <class name="testscripts.S1_TC1_NewFunctionality">
+        <test-method status="FAIL" signature="suiteSetup(org.testng.ITestContext)[pri:0, instance:testscripts.S1_TC1_NewFunctionality@4b5d6a01]" name="suiteSetup" is-config="true" duration-ms="37506" started-at="2018-07-27T01:45:28Z" finished-at="2018-07-27T01:46:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@57a3af25]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at java.text.SimpleDateFormat.<init>(Unknown Source)
+	at java.text.SimpleDateFormat.<init>(Unknown Source)
+	at util.Util.getCurrentFormattedTime(Util.java:18)
+	at util.TimeStamp.getInstance(TimeStamp.java:34)
+	at supportlibraries.ResultSummaryManager.initializeSummaryReport(ResultSummaryManager.java:70)
+	at supportlibraries.TestCase.suiteSetup(TestCase.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:326)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- executeTest -->
-      </class> <!-- testCases.HybridExecuteTest -->
+        </test-method> <!-- suiteSetup -->
+        <test-method status="SKIP" signature="testMethodSetup(java.lang.String)[pri:0, instance:testscripts.S1_TC1_NewFunctionality@4b5d6a01]" name="testMethodSetup" is-config="true" duration-ms="0" started-at="2018-07-27T01:46:05Z" finished-at="2018-07-27T01:46:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodSetup -->
+        <test-method status="SKIP" signature="runS1_TC1_NewFunctionality()[pri:0, instance:testscripts.S1_TC1_NewFunctionality@4b5d6a01]" name="runS1_TC1_NewFunctionality" duration-ms="4" started-at="2018-07-27T01:46:05Z" finished-at="2018-07-27T01:46:05Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at java.text.SimpleDateFormat.<init>(Unknown Source)
+	at java.text.SimpleDateFormat.<init>(Unknown Source)
+	at util.Util.getCurrentFormattedTime(Util.java:18)
+	at util.TimeStamp.getInstance(TimeStamp.java:34)
+	at supportlibraries.ResultSummaryManager.initializeSummaryReport(ResultSummaryManager.java:70)
+	at supportlibraries.TestCase.suiteSetup(TestCase.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:326)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runS1_TC1_NewFunctionality -->
+        <test-method status="SKIP" signature="suiteTearDown()[pri:0, instance:testscripts.S1_TC1_NewFunctionality@4b5d6a01]" name="suiteTearDown" is-config="true" duration-ms="0" started-at="2018-07-27T01:46:05Z" finished-at="2018-07-27T01:46:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteTearDown -->
+      </class> <!-- testscripts.S1_TC1_NewFunctionality -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
